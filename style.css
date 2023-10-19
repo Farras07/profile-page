@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+	font-family: arial;
+	font-size: 12px;
+	scroll-snap-type: y mandatory;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	color:black
+}
+
+.home{
+	scroll-snap-align: start;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.pertama{
+	background-image: url(https://storage.googleapis.com/bucket-farras/download.png);
+
+}
+.kedua,.ketiga{
+	background-color: #11334a;
+}
+
+nav{
+	padding: 5px 20px;
+	position: relative;
+	z-index: 99;
+}
+.col-1{
+	width: 350px;
+	position: fixed;
+	right: 30px;
+}
+.menu ul {
+	display: flex;
+	justify-content: space-between;
+}
+.menu ul li{
+	list-style: none;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.search {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+}
+.search::-webkit-input-placeholder {
+	color: white;
+}
+.search:focus{
+	outline: none;
+}
+.col-2{
+	width: 20rem;
+	position: fixed;
+	top: 50px;
+	margin-left: -130px;
+	left: 50%;
+}
+.col-2 ul li a{
+	text-decoration: none;
+	color: #1f818c;
+	font-size: 1.3rem;
+	padding: 5px 0 5px 0;
+	position: fixed;
+	font-weight: bold;
+}
+.col-2 ul li a:hover{
+	transition: all .3s ;
+	border-bottom: 3px solid rgb(80, 152, 168);
+}
+.col-2 ul li {
+	margin-right: 20px;
+}
+.react {
+	animation: spin 10s linear infinite;
+}
+.skillImg{
+	width:100px;
+	height: 100px;
+}
+@media(max-width : 767px){
+	.home {
+		background-position: center;
+		height: 100vh;
+		
+	}
+}
+@media(max-width : 574px){
+	.home {
+		background-position: center;
+		height: 100vh;
+	}
+}
+@media(max-width : 390px) {
+	home{
+		background-position: center;
+		height: 100vh;
+	}
+}
+
+@keyframes spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }

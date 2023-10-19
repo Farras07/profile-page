@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="tailwind.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="menu col-2">
+            <ul>
+                <li><a class="menuNav" href="#home">Home</a></li>
+                <li><a class="menuNav" href="#about">About</a></li>
+                <li><a class="menuNav" href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="home pertama flex flex-col justify-center items-center" id="home">
+        <section class="mt-20 w-[30%] flex flex-col gap-4">
+            <h1 class="text-6xl opacity-[.8] leading-[5rem] font-black tracking-wide text-white h-fit">Hi! <span class="block bg-clip-text text-transparent bg-gradient-to-r from-dust via-sea to-[#20659e]">I'm Farras Hafish Zidane</span></h1>
+            <p class="text-xl font-black tracking-wide text-white">Full Stack Web | Cloud Computing Enthusiast </p>
+            <a class="mt-4 px-6 py-4 w-fit bg-gradient-to-r from-[#1f818c] to-[#20659e] hover:to-clearsky  rounded-full text-white text-2xl" href="https://github.com/farras07">Visit My Github</a>
+        </section>
+    </div>
+    <div class="home kedua flex px-20" id="about">
+        <section class=" w-[40%] flex flex-col items-center justify-center gap-10">
+            <figure class="relative overflow-hidden z-[100] w-[30rem] h-[30rem] rounded-full bg-slate-400">
+                <img class="absolute -top-36 -z-40 rounded-md" src="https://storage.googleapis.com/bucket-farras/profil.jpeg" alt="">
+            </figure>
+            <figcaption class="flex flex-col gap-3">
+                <p  class="text-white text-3xl">Farras Hafish Zidane</p>
+                <p class="font-bold text-3xl text-center bg-gradient-to-r bg-clip-text text-transparent from-indigo-400 to-sky-800">Student</p>
+            </figcaption>
+        </section>
+        <section class="w-[60%] px-10 flex flex-col justify-center gap-10">
+            <h2 class="text-4xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-dust via-clearsky to-sea w-fit">About Me</h2>
+            <div class="text-white text-xl leading-10">Welcome to my corner of the internet! I'm Farras Hafish Zidane, a passionate explorer in the world of technology, full-stack development, and cloud computing.
+                My fascination with technology began when i was highschool and has only grown stronger over the years.I enjoy crafting innovative web applications and systems that not only look great but also work seamlessly. Whether it's front-end design, back-end logic, or database management, I relish the challenge of bringing ideas to life through code.
+                What excites me the most is the endless learning journey that technology offers. I believe in the power of continuous education, and I'm committed to staying up-to-date with the latest trends, best practices, and emerging tools in the ever-evolving tech world
+            </div>
+        </section>
+    </div>
+    <div class="home ketiga flex flex-col justify-center w-full items-center gap-20" id="skills">
+        <h2 class="text-4xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-dust via-clearsky to-sea">Skills </h2>
+        <div class="w-[60%] h-fit justify-center flex flex-wrap gap-20 ">
+            <figure class="w-[10rem] h-[5rem] items-center justify-start flex flex-col gap-4">
+                <img class="react skillImg" src="https://storage.googleapis.com/bucket-farras/react.svg" alt="React">
+                <figcaption class="text-white font-bold text-2xl">React</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/nextjs.svg" alt="NextJs">
+                <figcaption class="text-white font-bold text-2xl">Nextjs</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/postgre.svg" alt="Postgresql">
+                <figcaption class="text-white font-bold text-2xl">Postgresql</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/mongo.svg" alt="MongoDb">
+                <figcaption class="text-white font-bold text-2xl">MongoDb</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center ">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/hapi.svg" alt="Hapi">
+                <figcaption class="text-white font-bold text-2xl">Hapi</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center ">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/tailwind.svg" alt="Tailwind">
+                <figcaption class="text-white font-bold text-2xl">Tailwind</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center ">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/html.svg" alt="HTML">
+                <figcaption class="text-white font-bold text-2xl">HTML</figcaption>
+            </figure>
+            <figure class="w-[10rem] flex flex-col gap-4 items-center">
+                <img class="skillImg" src="https://storage.googleapis.com/bucket-farras/css.svg" alt="CSS">
+                <figcaption class="text-white font-bold text-2xl">CSS</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
